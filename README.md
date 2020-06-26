@@ -42,9 +42,9 @@ docker build -t microservice-helloworld:v1 .
 
 ### Kubernetes
 
-Observação: alguns comandos abaixo utilizam-se das flags:
---dry-run: valida se o comando é válido, porém não efetua a alteração no cluster.
--o yaml: exibe o resultado do comando no formato yaml. Útil para atender necessidades de "Infra as Code"
+Observação: alguns comandos abaixo utilizam-se das flags:<br>
+--dry-run: valida se o comando é válido, porém não efetua a alteração no cluster.<br>
+-o yaml: exibe o resultado do comando no formato yaml. Útil para atender necessidades de "Infra as Code"<br>
 Ou seja, caso queira efetuar a alteração no cluster, retire estas flags.
 
 - Criar deployments 
