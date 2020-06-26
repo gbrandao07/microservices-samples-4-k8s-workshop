@@ -1,6 +1,6 @@
 # microservices-samples-4-k8s-workshop
 
-Projeto utilizado em um workshop que apresentei sobre "Introdução ao Kubernetes".
+Repositório dos artefatos utilizados em um workshop que apresentei sobre "Introdução ao Kubernetes".
 Constitui-se de dois projetos em Spring Boot, chamados "microservice-helloworld" e "microservice-welcome"
 São microserviços que expõem endpoints rest. Projetos do tipo "exemplos" apenas com os insumos necessários para entender como o Kubernetes gerencia aplicações.
 
