@@ -11,7 +11,7 @@ Durante o processamento da requisição externa, irá invocar o "microservice-we
 
 ## microservice-welcome
 
-Projeto que ficará disponível apenas para receber requisições de serviços de dentro do cluster. Ou seja, irá receber requisições do "microservice-helloworld" mas no será capaz de receber requisições externas ao cluster.
+Projeto que ficará disponível apenas para receber requisições de serviços de dentro do cluster. Ou seja, irá receber requisições do "microservice-helloworld" mas não será capaz de receber requisições externas ao cluster.
 
 ## Visão detalhada do cenário do workshop
 ![alt text](https://github.com/gbrandao07/microservices-samples-4-k8s-workshop/blob/master/diagram-demo.png?raw=true)
