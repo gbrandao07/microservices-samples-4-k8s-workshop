@@ -26,6 +26,13 @@ Projeto que ficará disponível apenas para receber requisições de serviços d
 
 ### Minikube
 
+- Excluir instalações anteriores e criar uma nova
+```
+minikube delete --all
+minikube start
+minikube status
+```
+
 - Utilizar Minikube como repositório Docker (elimina necessidade de fazer "push" das imagens para um repositório externo, como o Dockerhub)
 ```
 minikube docker-env
@@ -49,13 +56,13 @@ Ou seja, caso queira efetuar a alteração no cluster, retire estas flags.
 
 - Criar deployments 
 ```
-kubectl run microservice-welcome --image=microservice-welcome:v1 --dry-run -o yaml
-kubectl run microservice-helloworld --image=microservice-helloworld:v1 --dry-run -o yaml
+kubectl run microservice-welcome --image=microservice-welcome:v1 --port=80 # --dry-run -o yaml
+kubectl run microservice-helloworld --image=microservice-helloworld:v1  --port=80 # --dry-run -o yaml
 ```
 - Criar/expor deployments como serviços
 ```
-kubectl expose deploy microservice-helloworld --name=microservice-helloworld --port=80 --type=ClusterIp --dry-run -o yaml
-kubectl expose deploy microservice-welcome --name=microservice-welcome --port=80 --type=ClusterIp --dry-run -o yaml
+kubectl expose deploy microservice-welcome --name=microservice-welcome --port=80 --type=ClusterIP # --dry-run -o yaml
+kubectl expose deploy microservice-helloworld --name=microservice-helloworld --port=80 --type=NodePort # --dry-run -o yaml
 ```
 - Logs e informações
 ```
